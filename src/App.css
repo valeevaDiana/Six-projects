@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.App {
+  margin: 0 auto;
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 124px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+button {
+  font-size: 24px;
+  margin: 0rem 0.5rem 1rem 0.5rem;
+  padding: 10px 10px;
+  border-radius:  8px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.buttonMinus {
+  background-color: rgb(255, 201, 201);
+}
+
+.buttonPlus {
+  background-color: rgb(181, 255, 202);
+}
