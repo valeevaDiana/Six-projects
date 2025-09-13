@@ -13,12 +13,14 @@ function App() {
   };
 
   return (
-    <div className='App'>
-      <h2>Counter</h2>
-      <h1>{counter}</h1>
-      <div>
-        <button className='buttonMinus' onClick={onClickMinus}>- Minus</button>
-        <button className='buttonPlus' onClick={onClickPlus}>Plus +</button>
+    <div>
+      <div className='App'>
+        <h2>Counter</h2>
+        <h1>{counter}</h1>
+        <div>
+          <button className='buttonMinus' onClick={onClickMinus}>- Minus</button>
+          <button className='buttonPlus' onClick={onClickPlus}>Plus +</button>
+        </div>
       </div>
     </div>
   )
