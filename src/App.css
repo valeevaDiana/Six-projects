@@ -17,6 +17,27 @@
   border-radius: 50px;
 }
 
+.navigation {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  border-bottom: 3px solid rgb(213, 213, 213);
+  border-radius: 3px;
+}
+
+.navigation li {
+  padding: 1rem 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
+}
+
+.navigation li:hover {
+  border-bottom: 3px solid rgb(77, 77, 77);
+  transform: scale(1.1);
+}
+
 h1 {
   font-size: 124px;
   font-size: clamp(60px, 15vw, 124px);

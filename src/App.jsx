@@ -1,29 +1,36 @@
-import { useState } from 'react';
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Counter from "./Apps/Counter";
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  const [currentApp, setCurrentApp] = useState("1");
 
-  const onClickPlus = () => {
-    setCounter(counter + 1);
-  };
+  const renderApp = () => {
+    switch (currentApp) {
+      case "1":
+        return <Counter />;
+        break;
 
-  const onClickMinus = () => {
-    setCounter(counter - 1);
+      default:
+        break;
+    }
   };
 
   return (
     <div>
-      <div className='App'>
-        <h2>Counter</h2>
-        <h1>{counter}</h1>
-        <div>
-          <button className='buttonMinus' onClick={onClickMinus}>- Minus</button>
-          <button className='buttonPlus' onClick={onClickPlus}>Plus +</button>
-        </div>
-      </div>
+      <header>
+        <ul className='navigation'>
+          <li onClick={() => setCurrentApp('1')}>Counter</li>
+          <li onClick={() => setCurrentApp('2')}>app2</li>
+          <li onClick={() => setCurrentApp('3')}>app3</li>
+          <li onClick={() => setCurrentApp('4')}>app4</li>
+          <li onClick={() => setCurrentApp('5')}>app5</li>
+          <li onClick={() => setCurrentApp('6')}>app6</li>
+        </ul>
+      </header>
+      <main>{renderApp()} </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
