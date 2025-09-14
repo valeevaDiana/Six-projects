@@ -28,13 +28,17 @@
 .navigation li {
   padding: 1rem 1rem;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   border-bottom: 3px solid transparent;
 }
 
 .navigation li:hover {
   border-bottom: 3px solid rgb(34, 45, 86);
   transform: scale(1.1);
+}
+
+.navigation li.active {
+  border-bottom: 3px solid rgb(34, 45, 86);
 }
 
 h1 {
@@ -55,7 +59,7 @@ button {
   padding: 10px 10px;
   border-radius: 8px;
   box-shadow: 2px 2px black;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
