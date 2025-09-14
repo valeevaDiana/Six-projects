@@ -3,4 +3,73 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.card {
+    margin: 5rem auto;  
+    width: 70%;
+    padding: 1rem;
+    
+
+    height: auto;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 50px;
+    background-color:  rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+progress {
+    width: 80%;
+    height: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background: #f0f0f0;
+    border-radius: 10px;
+    border: 1px solid #3d1212;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #3817a2, #716db1);
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #3817a2, #716db1);
+    border-radius: 10px;
+}
+
+.ulQuiz {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 8px;                   
+  margin-top: 1rem;
+  margin-left: 0;             
+}
+
+.liQuiz {
+    padding: 1rem;              
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: white;
+    color: #333;
+    width: 90%;                 
+    text-align: left;           
+    box-sizing: border-box;      
+}
+
+.liQuiz:hover {
+    transform: scale(1.1);
 }
