@@ -1,0 +1,14 @@
+.game {
+    width: 60rem;
+    height: 60rem;
+
+}
+
+img {
+    width: 13rem;
+    height: 13rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 194, 81);
+    background-color: rgb(255, 250, 243);
+}
